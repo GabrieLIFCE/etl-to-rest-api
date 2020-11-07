@@ -1,5 +1,7 @@
-# flask-rest-api
-The purpose of this task is to present how to make a database design and make the data available via REST API. 
+# Data Engineer Use Case
+The purpose of this task is to present how to extract and parse data from a given source to be inserted into a database. Then, make the data available from the database via a REST API. 
+
+Knowlege used: ETL, Database Design, API Development.
 
 The idea is to enter data from the `data.json` file into an SQLite database, and make the data available through an API. The json-file contains 1000 randomly sampled CVEs' from 2019, with information related to each CVE.
 CVE® is a list of entries—each containing an identification number, a description, and at least one public reference—for publicly known cybersecurity vulnerabilities.
@@ -21,3 +23,7 @@ The json contains lots of information that we are not interested in, and to narr
 1. An endpoint `/cpe/{vendor}/{product}` exists that returns a list of all CVEs related to that particular CPE.
 2. An endpoint `/cve/{cve_id}` exists that returns a CVE with its corresponding CVSS3, CPEs, description, and dates. 
 3. The API is implemented using Flask.
+
+### Running the code locally
+
+Open the instruction.txt file present in the repository for more information.
