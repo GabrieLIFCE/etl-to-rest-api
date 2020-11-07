@@ -1,0 +1,25 @@
+# Open terminal in the base folder directory
+
+# Install the dependencies present on the file requirements.txt on base folder (you may want to create a venv before)
+    - pip install -r requirements.txt
+
+# Execute the main.py file
+    - python main.py
+
+main.py will call the methods to extract and populate sqlite database, then it will
+run the api.
+
+The database (database.sqlite) will contain 3 tables:
+ - cve
+ - cpe
+ - cvssv3
+
+You can access/query the tables using a database administration tool, such as Dbeaver. 
+There you can also see the ER diagram of the tables.
+
+To see the API documentation from swagger, access 'localhost:5000' on your brownser.
+
+Example of API enpoints:
+
+http://localhost:5000/api/cve/CVE-2019-0606
+http://localhost:5000/api/cpe/microsoft/windows_10
