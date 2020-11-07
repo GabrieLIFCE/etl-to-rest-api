@@ -27,3 +27,10 @@ The json contains lots of information that we are not interested in, and to narr
 ### Running the code locally
 
 Open the instruction.txt file present in the repository for more information.
+
+
+### Change Log
+
+0.0.1
+
+- Initial version of the project with implementation
